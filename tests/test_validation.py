@@ -6,6 +6,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from scripts import publish
+
 ROOT = Path(__file__).resolve().parents[1]
 VALIDATOR_PATH = ROOT / "scripts" / "validate_repository.py"
 
@@ -21,6 +23,23 @@ def load_validator():
 
 
 class RepositoryValidationTests(unittest.TestCase):
+
+    def test_publish_rejects_moving_and_malformed_refs(self):
+        for ref in ["main", "master", "HEAD", "feature/test", "abc123"]:
+            with self.subTest(ref=ref), self.assertRaises(ValueError):
+                publish.validate_ref(ref)
+
+    def test_publish_accepts_full_sha_and_version_tag(self):
+        self.assertEqual(
+            publish.validate_ref("81a1a45246dd63b5ff0dc0c30969dd47f9870f17"),
+            "81a1a45246dd63b5ff0dc0c30969dd47f9870f17",
+        )
+        self.assertEqual(publish.validate_ref("v1.0.0"), "v1.0.0")
+
+    def test_committed_dist_matches_declared_release_ref(self):
+        ref = (ROOT / "dist" / "RELEASE_REF").read_text(encoding="utf-8").strip()
+        self.assertEqual(publish.check_published(ref, ROOT), [])
+
     @classmethod
     def setUpClass(cls):
         cls.validator = load_validator()

@@ -16,7 +16,7 @@
 - 成人内容网站归独立分组，是否代理/拒绝由用户选择，绝不混入广告规则。
 
 > [!WARNING]
-> 当前是本地规则基线，已经具备生成、测试和仓库校验，但尚未接入生产 Subconverter，也未经过真实客户端 Canary 验证。不要直接替换现有生产订阅。
+> 自动化测试不能替代真实客户端验证。首次更换规则时，建议先用一个客户端 Canary，确认常用国内服务、Apple、FCM 和流媒体行为符合预期后再全面切换。
 
 ## 配置档位
 
@@ -139,7 +139,7 @@ python3 scripts/publish.py --ref <commit-sha 或 tag>
 /sub?target=clash&url=<节点订阅>&config=https://raw.githubusercontent.com/AS13379/new-gen-rules/<ref>/dist/Full.ini
 ```
 
-`dist/` 已提交到仓库，Raw URL 可直接访问。生产环境应把 `--ref` 固定到 commit SHA 或版本标签，不追踪 `main`。
+`dist/` 已提交到仓库，Raw URL 可直接访问。`dist/RELEASE_REF` 记录这些发布文件所绑定的不可变版本；它可以早于当前 HEAD，但必须通过 `publish.py --check` 证明仍由当前 `profiles/` 生成。发布时应使用 40 位 commit SHA 或以 `v` 开头的版本标签，脚本会拒绝 `main`、`master` 和 `HEAD`。
 
 > [!NOTE]
 > 本地调试的两个实测坑（Subconverter v0.9.0）：
