@@ -196,6 +196,16 @@ ruleset=📢 谷歌服务,rules/proxy/google.list
 
 本仓库原创代码采用 MIT License。外部规则来源及派生数据可能适用其各自许可证，参见 [`NOTICE.md`](NOTICE.md) 和 `policy/sources.toml`。
 
+## 贡献者
+
+本仓库由 Leander 与多位 AI 助手协作开发，特此致谢：
+
+- **DeepSeek**
+- **Claude**（Anthropic）
+- **Codex**（OpenAI）
+
+感谢它们在规则设计、测试与文档方面提供的帮助。
+
 ## 问题与反馈
 
 欢迎提出任何问题、建议和使用反馈——分流不对、域名没覆盖、想加分组，都可以提出来一起讨论。
