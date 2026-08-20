@@ -4,7 +4,6 @@ __pycache__/
 .env
 .secrets/
 private/
-dist/
 build/
 .DS_Store
 *.log

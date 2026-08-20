@@ -128,24 +128,25 @@ python3 scripts/simulate_routing.py --report reports/mainland-strict-routing-rep
 
 ## 接入 Subconverter
 
-当前 INI 使用相对规则路径，例如：
+仓库内的 `profiles/*.ini` 使用相对规则路径（`rules/proxy/google.list`），适合本地整仓挂载调试。落地发布时用 `scripts/publish.py` 生成 `dist/*.ini`，把规则路径改写为固定 commit 的 Raw URL：
 
-```ini
-ruleset=📢 谷歌服务,rules/proxy/google.list
+```bash
+python3 scripts/publish.py --ref <commit-sha 或 tag>
 ```
 
-部署时有两种选择：
+然后用 Subconverter 的 `config=` 指向发布版（远程 URL），配合节点订阅生成 Clash 配置：
 
-1. 将整个仓库挂载到 Subconverter 可读取的目录，保持相对路径；
-2. 上传 GitHub 后，在发布流程中把路径转换为固定提交的 Raw URL。
+```text
+/sub?target=clash&url=<节点订阅>&config=https://raw.githubusercontent.com/AS13379/new-gen-rules/<ref>/dist/Full.ini
+```
 
-生产环境应固定到提交 SHA 或版本标签，不应直接追踪 `main`，避免上游变更未经验证进入订阅。
+`dist/` 已提交到仓库，Raw URL 可直接访问。生产环境应把 `--ref` 固定到 commit SHA 或版本标签，不追踪 `main`。
 
 > [!NOTE]
-> 本地调试时的两个实测坑（Subconverter v0.9.0）：
+> 本地调试的两个实测坑（Subconverter v0.9.0）：
 >
-> 1. `config=` 参数必须用**相对路径**（相对于 Subconverter 进程的工作目录）。传绝对路径会被静默读空——日志报 `Load external configuration failed: Empty document`，Subconverter 会回退到内置默认配置，看起来"转换成功"但实际规则和分组都没生效。
-> 2. ruleset 相对路径同样相对于 Subconverter 工作目录解析，因此整仓挂载时需让 `rules/` 目录落在工作目录可访问的位置（例如软链 `rules/{direct,proxy,reject}` 到工作目录的 `rules/` 下）。
+> 1. `config=` 参数只接受**相对路径**（相对于 Subconverter 工作目录）或远程 URL。传绝对路径会被静默读空——日志报 `Load external configuration failed: Empty document`，Subconverter 回退内置默认配置，看起来"转换成功"但规则和分组都没生效。
+> 2. ruleset 相对路径同样相对于 Subconverter 工作目录解析，整仓挂载时需让 `rules/` 落在工作目录可访问处。
 
 ## 规则维护原则
 
