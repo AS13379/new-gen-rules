@@ -55,7 +55,7 @@ Full 提供：
 
 ### Apple
 
-`🍎 Apple服务`的第一候选是 `🚀 节点选择`，之后才提供 `♻️ 自动选择`、手动和 DIRECT。这样 Apple 默认继承用户选择的稳定出口，避免每次测速导致地区变化。
+`🍎 Apple服务`的第一候选是 `🚀 节点选择`，之后才提供 `♻️ 自动选择`、手动选节点和 DIRECT。这样 Apple 默认继承用户选择的稳定出口，避免每次测速导致地区变化。
 
 规则初步覆盖 Apple Account、iCloud、App Store、APNs、Apple Intelligence、Siri 和 Private Cloud Compute 相关域名。网络分流无法绕过设备销售地区、Apple Account 地区或 Apple 服务端资格限制。
 
@@ -141,6 +141,12 @@ ruleset=📢 谷歌服务,rules/proxy/google.list
 
 生产环境应固定到提交 SHA 或版本标签，不应直接追踪 `main`，避免上游变更未经验证进入订阅。
 
+> [!NOTE]
+> 本地调试时的两个实测坑（Subconverter v0.9.0）：
+>
+> 1. `config=` 参数必须用**相对路径**（相对于 Subconverter 进程的工作目录）。传绝对路径会被静默读空——日志报 `Load external configuration failed: Empty document`，Subconverter 会回退到内置默认配置，看起来"转换成功"但实际规则和分组都没生效。
+> 2. ruleset 相对路径同样相对于 Subconverter 工作目录解析，因此整仓挂载时需让 `rules/` 目录落在工作目录可访问的位置（例如软链 `rules/{direct,proxy,reject}` 到工作目录的 `rules/` 下）。
+
 ## 规则维护原则
 
 - 官方网络文档优先；
@@ -171,7 +177,7 @@ ruleset=📢 谷歌服务,rules/proxy/google.list
 - 使用 Subconverter v0.9.0 将六份 INI 转换为真实 Clash YAML；
 - 六份转换结果均通过 Mihomo v1.19.30 `-t` 配置校验。
 - 122 个代表场景 × 6 种配置，共 732 个确定性路由检查全部通过；
-- 分组即选择权：`🔞 成人内容` 可选 `自动选择 / 节点选择 / 手动切换 / DIRECT / REJECT`
+- 分组即选择权：`🔞 成人内容` 可选 `自动选择 / 节点选择 / 手动选节点 / DIRECT / REJECT`
   （默认代理），`🛑 广告拦截` 可选 `REJECT / DIRECT`（默认拦截），
   是否拦截由用户在 Clash 客户端自行决定，规则仓库不代替用户做这个决定；
 - 校验只保证**分类归属**：成人站点归 `adult-content.list`（用户可控组），
