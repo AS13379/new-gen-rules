@@ -23,7 +23,7 @@
 |---|---|---|
 | `Mini` | 接近原 ACL4SSR Mini 的极简体验 | 节点选择、自动选择、中国直连、漏网之鱼 |
 | `Mini_Adblock` | Mini + 广告拦截 | Mini 全部 + 唯一广告组 |
-| `Standard` | 日常够用的折中方案 | Google、Apple、AI、通讯社交、流媒体、Microsoft |
+| `Standard` | 日常够用的折中方案 | 谷歌、Apple、AI、通讯社交、流媒体、Microsoft |
 | `Standard_Adblock` | Standard + 广告拦截 | Standard 全部 + 唯一广告组 |
 | `Full` | 需要精细控制的完整方案 | Standard 基础上细分哔哩哔哩、加密货币、游戏、开发者、成人内容等 |
 | `Full_Adblock` | Full + 广告拦截 | Full 全部 + 唯一广告组 |
@@ -34,7 +34,7 @@
 
 ### Mini
 
-Mini 不设置 Google、Apple、加密货币等专组。服务规则仍会被维护，但统一指向 `🚀 节点选择`，从而保持界面简洁。
+Mini 不设置谷歌、Apple、加密货币等专组。服务规则仍会被维护，但统一指向 `🚀 节点选择`，从而保持界面简洁。
 
 ### Standard
 
@@ -47,7 +47,7 @@ Full 提供：
 - `💹 加密货币`：OKX、Binance、Coinbase、KuCoin、Gate、Bybit、Bitget 等主流交易所与行情站；
 - `📺 哔哩哔哩`：默认直连，可切代理看港澳台/海外番剧；
 - `🔞 成人内容`：成人视频、漫画/本子、直播站本身走代理（可选拒绝）；
-- Google、Apple、AI、通讯社交、流媒体、游戏、Microsoft、开发者等专组。
+- 谷歌、Apple、AI、通讯社交、流媒体、游戏、Microsoft、开发者等专组。
 
 ### Apple
 
@@ -81,7 +81,7 @@ Google Translate、Google APIs 和 Firebase Cloud Messaging 统一归入 `📢 �
 8. `GEOIP,CN` 中国大陆公网 IP；
 9. `FINAL` 到漏网之鱼，默认自动选择代理。
 
-明确业务规则位于 `GEOIP,CN` 之前，因此 Google、Apple、OKX 等不会因为历史直连列表而误判。
+明确业务规则位于 `GEOIP,CN` 之前，因此谷歌、Apple、交易所等不会因为历史直连列表而误判。
 
 ## 仓库结构
 
@@ -171,7 +171,7 @@ ruleset=📢 谷歌服务,rules/proxy/google.list
   （默认代理），`🛑 广告拦截` 可选 `REJECT / DIRECT`（默认拦截），
   是否拦截由用户在 Clash 客户端自行决定，规则仓库不代替用户做这个决定；
 - 校验只保证**分类归属**：成人站点归 `adult-content.list`（用户可控组），
-  成人广告网络归 reject 列表，防止站点被广告规则悄悄抢走而剥夺选择权；
+  成人广告网络与通用广告合并归入 `ads-base.list`，防止站点被广告规则悄悄抢走而剥夺选择权；
 - 报告由模拟结果生成并经 `scripts/check_report_current.py` 校验新鲜度，
   详见 [`reports/mainland-strict-routing-report.md`](reports/mainland-strict-routing-report.md)。
 
@@ -184,7 +184,7 @@ ruleset=📢 谷歌服务,rules/proxy/google.list
 后续仍需：
 
 - 对原 Subconverter 直连列表逐条迁移审计；
-- 从官方资料补全并验证 Apple、Google、交易所；
+- 从官方资料补全并验证 Apple、谷歌、交易所；
 - 引入可信 CN GeoIP/MRS 数据并固定版本；
 - 接入真实 CELERITY 节点并进行 Canary 客户端测试。
 
