@@ -17,6 +17,8 @@ jobs:
           python-version: "3.11"
       - name: Verify generated profiles
         run: python3 scripts/build_profiles.py --check
+      - name: Verify published Subconverter profiles
+        run: python3 scripts/publish.py --check --ref "$(cat dist/RELEASE_REF)"
       - name: Run repository validation
         run: python3 scripts/validate_repository.py
       - name: Verify routing report is current
