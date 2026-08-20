@@ -60,11 +60,17 @@ class ProfileGenerationTests(unittest.TestCase):
             for region in ["香港节点", "日本节点", "新加坡节点", "美国节点", "台湾节点", "韩国节点"]:
                 self.assertNotIn(region, text)
 
-    def test_apple_defaults_to_proxy_selection_not_auto(self):
+    def test_all_proxy_service_groups_default_to_manual_node_selection(self):
         for name in ["Standard", "Standard_Adblock", "Full", "Full_Adblock"]:
             text = self.profiles[name]
-            line = next(line for line in text.splitlines() if line.startswith("custom_proxy_group=🍎 Apple服务`"))
-            self.assertIn("`select`[]🚀 节点选择`[]♻️ 自动选择", line)
+            for group in ["📢 谷歌服务", "🍎 Apple服务", "💬 AI平台", "📲 通讯社交", "🎥 流媒体", "Ⓜ️ Microsoft服务", "🐟 漏网之鱼"]:
+                line = next(line for line in text.splitlines() if line.startswith(f"custom_proxy_group={group}`"))
+                self.assertIn("`select`[]🚀 节点选择`[]♻️ 自动选择", line, f"{name}: {group}")
+
+    def test_node_selection_lists_real_nodes_before_auto_selection(self):
+        for name, text in self.profiles.items():
+            line = next(line for line in text.splitlines() if line.startswith("custom_proxy_group=🚀 节点选择`"))
+            self.assertIn("`select`.*`[]♻️ 自动选择`[]DIRECT", line, name)
 
     def test_other_service_groups_include_automatic_selection(self):
         for name, text in self.profiles.items():
@@ -85,6 +91,9 @@ class ProfileGenerationTests(unittest.TestCase):
                     continue
                 group = line.split("=", 1)[1].split("`", 1)[0]
                 if group in {"🎯 中国直连", "🛑 广告拦截", "♻️ 自动选择"}:
+                    continue
+                if group == "🚀 节点选择":
+                    self.assertIn("`.*", line, f"{name}: 节点选择应直接列出所有节点")
                     continue
                 self.assertTrue(
                     line.endswith("`.*"),
