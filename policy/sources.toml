@@ -1,0 +1,254 @@
+# Source registry. No subscription tokens or credentials are permitted here.
+
+[[source]]
+id = "apple-enterprise-network"
+url = "https://support.apple.com/en-us/101555"
+kind = "official"
+target = "apple"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; Apple website terms apply"
+
+[[source]]
+id = "apple-intelligence-availability"
+url = "https://support.apple.com/en-us/121115"
+kind = "official"
+target = "apple"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; Apple website terms apply"
+
+[[source]]
+id = "firebase-fcm-network"
+url = "https://firebase.google.com/docs/cloud-messaging/network-configuration"
+kind = "official"
+target = "google"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; Google documentation terms apply"
+
+[[source]]
+id = "google-translation-api"
+url = "https://cloud.google.com/translate/docs/reference/rest"
+kind = "official"
+target = "google"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; Google documentation terms apply"
+
+[[source]]
+id = "metacubex-meta-rules-dat"
+url = "https://github.com/MetaCubeX/meta-rules-dat"
+kind = "third-party-reference"
+target = "multiple"
+review = "weekly"
+revision = "4178770badecb1b349fbcd62c737e0d7a2079729"
+license = "GPL-3.0"
+
+[[source]]
+id = "blackmatrix7-ios-rule-script"
+url = "https://github.com/blackmatrix7/ios_rule_script"
+kind = "third-party-reference"
+target = "multiple"
+review = "weekly"
+revision = "24e571ee44747a3adf1b3c618102fc9d2b1b61cd"
+license = "GPL-2.0"
+
+[[source]]
+id = "loyalsoldier-clash-rules"
+url = "https://github.com/Loyalsoldier/clash-rules"
+kind = "third-party-reference"
+target = "multiple"
+review = "weekly"
+revision = "ab21f1c70d263c683990a0aed446ad3bf09a2961"
+license = "GPL-3.0"
+
+[[source]]
+id = "v2fly-domain-list-community"
+url = "https://github.com/v2fly/domain-list-community"
+kind = "third-party-reference"
+target = "multiple"
+review = "weekly"
+revision = "c975ccef9c19f005a3bfa7a33255d1b406deea64"
+license = "MIT"
+
+[[source]]
+id = "easylist-reference"
+url = "https://github.com/easylist/easylist"
+kind = "third-party-reference"
+target = "ads"
+review = "weekly"
+revision = "10b310caa1dcf412af483c4e1e0bca4a65327aaf"
+license = "reference-only; see upstream filter-list terms"
+
+[[source]]
+id = "adguard-sdns-filter"
+url = "https://github.com/AdguardTeam/AdGuardSDNSFilter"
+kind = "third-party-reference"
+target = "ads"
+review = "weekly"
+revision = "bedb5e89991ae45398c6ece578d528af75d8b351"
+license = "GPL-3.0"
+
+[[source]]
+id = "meta-official"
+url = "https://about.meta.com/technologies/"
+kind = "official-homepage"
+target = "meta"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; Meta website terms apply"
+
+[[source]]
+id = "wechat-official"
+url = "https://weixin.qq.com/"
+kind = "official-homepage"
+target = "china-services"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; Tencent website terms apply"
+
+[[source]]
+id = "douyin-official"
+url = "https://www.douyin.com/"
+kind = "official-homepage"
+target = "china-services"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "xiaohongshu-official"
+url = "https://www.xiaohongshu.com/"
+kind = "official-homepage"
+target = "china-services"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "weibo-official"
+url = "https://weibo.com/"
+kind = "official-homepage"
+target = "china-services"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "iqiyi-official"
+url = "https://www.iqiyi.com/"
+kind = "official-homepage"
+target = "china-services"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "youku-official"
+url = "https://www.youku.com/"
+kind = "official-homepage"
+target = "china-services"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "tencent-video-official"
+url = "https://v.qq.com/"
+kind = "official-homepage"
+target = "china-services"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; Tencent website terms apply"
+
+[[source]]
+id = "deepseek-official"
+url = "https://www.deepseek.com/"
+kind = "official-homepage"
+target = "china-services"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "kimi-official"
+url = "https://www.kimi.com/"
+kind = "official-homepage"
+target = "china-services"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "tongyi-official"
+url = "https://www.tongyi.com/"
+kind = "official-homepage"
+target = "china-services"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "doubao-official"
+url = "https://www.doubao.com/"
+kind = "official-homepage"
+target = "china-services"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "bilibili-official"
+url = "https://www.bilibili.com/"
+kind = "official-homepage"
+target = "bilibili"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "binance-official"
+url = "https://www.binance.com/"
+kind = "official-homepage"
+target = "crypto"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "coinbase-official"
+url = "https://www.coinbase.com/"
+kind = "official-homepage"
+target = "crypto"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "signal-official"
+url = "https://signal.org/"
+kind = "official-homepage"
+target = "messaging"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "line-official"
+url = "https://line.me/"
+kind = "official-homepage"
+target = "messaging"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+
+[[source]]
+id = "discord-official"
+url = "https://discord.com/"
+kind = "official-homepage"
+target = "messaging"
+review = "monthly"
+retrieved = "2026-08-20"
+license = "reference-only; service website terms apply"
+

@@ -1,0 +1,18 @@
+# Adult content sites are proxied, not rejected.
+DOMAIN-SUFFIX,pornhub.com
+DOMAIN-SUFFIX,pornhubpremium.com
+DOMAIN-SUFFIX,phncdn.com
+DOMAIN-SUFFIX,xvideos.com
+DOMAIN-SUFFIX,xnxx.com
+DOMAIN-SUFFIX,redtube.com
+DOMAIN-SUFFIX,youporn.com
+DOMAIN-SUFFIX,spankbang.com
+DOMAIN-SUFFIX,hanime.tv
+DOMAIN-SUFFIX,nhentai.net
+DOMAIN-SUFFIX,e-hentai.org
+DOMAIN-SUFFIX,exhentai.org
+DOMAIN-SUFFIX,chaturbate.com
+DOMAIN-SUFFIX,stripchat.com
+DOMAIN-SUFFIX,xhamster.com
+DOMAIN-SUFFIX,xhcdn.com
+DOMAIN-SUFFIX,xvideos-cdn.com

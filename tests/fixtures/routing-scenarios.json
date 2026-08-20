@@ -1,0 +1,1144 @@
+[
+  {
+    "id": "google_translate",
+    "category": "Google家族",
+    "domain": "translate.google.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📢 谷歌服务",
+      "full": "📢 谷歌服务"
+    }
+  },
+  {
+    "id": "google_gmail",
+    "category": "Google家族",
+    "domain": "mail.google.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📢 谷歌服务",
+      "full": "📢 谷歌服务"
+    }
+  },
+  {
+    "id": "google_drive",
+    "category": "Google家族",
+    "domain": "drive.google.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📢 谷歌服务",
+      "full": "📢 谷歌服务"
+    }
+  },
+  {
+    "id": "google_maps",
+    "category": "Google家族",
+    "domain": "maps.google.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📢 谷歌服务",
+      "full": "📢 谷歌服务"
+    }
+  },
+  {
+    "id": "google_gemini",
+    "category": "Google家族",
+    "domain": "gemini.google.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📢 谷歌服务",
+      "full": "📢 谷歌服务"
+    }
+  },
+  {
+    "id": "google_fcm",
+    "category": "Google家族",
+    "domain": "fcm.googleapis.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📢 谷歌服务",
+      "full": "📢 谷歌服务"
+    }
+  },
+  {
+    "id": "google_mtalk",
+    "category": "Google家族",
+    "domain": "alt8-mtalk.google.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📢 谷歌服务",
+      "full": "📢 谷歌服务"
+    }
+  },
+  {
+    "id": "google_gmail_root",
+    "category": "Google家族",
+    "domain": "gmail.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📢 谷歌服务",
+      "full": "📢 谷歌服务"
+    }
+  },
+  {
+    "id": "google_gvt_download",
+    "category": "Google家族",
+    "domain": "redirector.gvt1.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📢 谷歌服务",
+      "full": "📢 谷歌服务"
+    }
+  },
+  {
+    "id": "apple_icloud",
+    "category": "Apple家族",
+    "domain": "icloud.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🍎 Apple服务",
+      "full": "🍎 Apple服务"
+    }
+  },
+  {
+    "id": "apple_icloud_gateway",
+    "category": "Apple家族",
+    "domain": "gateway.icloud.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🍎 Apple服务",
+      "full": "🍎 Apple服务"
+    }
+  },
+  {
+    "id": "apple_app_store",
+    "category": "Apple家族",
+    "domain": "apps.apple.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🍎 Apple服务",
+      "full": "🍎 Apple服务"
+    }
+  },
+  {
+    "id": "apple_storekit",
+    "category": "Apple家族",
+    "domain": "api.storekit.itunes.apple.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🍎 Apple服务",
+      "full": "🍎 Apple服务"
+    }
+  },
+  {
+    "id": "apple_intelligence",
+    "category": "Apple家族",
+    "domain": "apple-relay.apple.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🍎 Apple服务",
+      "full": "🍎 Apple服务"
+    }
+  },
+  {
+    "id": "apple_pcc_cloudflare",
+    "category": "Apple家族",
+    "domain": "apple-relay.cloudflare.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🍎 Apple服务",
+      "full": "🍎 Apple服务"
+    }
+  },
+  {
+    "id": "apple_push",
+    "category": "Apple家族",
+    "domain": "courier.push.apple.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🍎 Apple服务",
+      "full": "🍎 Apple服务"
+    }
+  },
+  {
+    "id": "apple_me",
+    "category": "Apple家族",
+    "domain": "me.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🍎 Apple服务",
+      "full": "🍎 Apple服务"
+    }
+  },
+  {
+    "id": "apple_relay_mask",
+    "category": "Apple家族",
+    "domain": "apple-relay.mask.apple-dns.net",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🍎 Apple服务",
+      "full": "🍎 Apple服务"
+    }
+  },
+  {
+    "id": "meta_facebook",
+    "category": "Meta家族",
+    "domain": "facebook.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🚀 节点选择"
+    }
+  },
+  {
+    "id": "meta_instagram",
+    "category": "Meta家族",
+    "domain": "instagram.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📲 通讯社交",
+      "full": "📲 通讯社交"
+    }
+  },
+  {
+    "id": "meta_whatsapp",
+    "category": "Meta家族",
+    "domain": "whatsapp.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📲 通讯社交",
+      "full": "📲 通讯社交"
+    }
+  },
+  {
+    "id": "meta_messenger",
+    "category": "Meta家族",
+    "domain": "messenger.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📲 通讯社交",
+      "full": "📲 通讯社交"
+    }
+  },
+  {
+    "id": "meta_threads",
+    "category": "Meta家族",
+    "domain": "threads.net",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🚀 节点选择"
+    }
+  },
+  {
+    "id": "meta_cdn",
+    "category": "Meta家族",
+    "domain": "scontent.xx.fbcdn.net",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🚀 节点选择"
+    }
+  },
+  {
+    "id": "meta_fbcdn_com",
+    "category": "Meta家族",
+    "domain": "static.xx.fbcdn.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🚀 节点选择"
+    }
+  },
+  {
+    "id": "meta_threads_com",
+    "category": "Meta家族",
+    "domain": "threads.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🚀 节点选择"
+    }
+  },
+  {
+    "id": "stream_netflix",
+    "category": "海外流媒体",
+    "domain": "netflix.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🎥 流媒体",
+      "full": "🎥 流媒体"
+    }
+  },
+  {
+    "id": "stream_netflix_video",
+    "category": "海外流媒体",
+    "domain": "nflxvideo.net",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🎥 流媒体",
+      "full": "🎥 流媒体"
+    }
+  },
+  {
+    "id": "stream_disney",
+    "category": "海外流媒体",
+    "domain": "disneyplus.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🎥 流媒体",
+      "full": "🎥 流媒体"
+    }
+  },
+  {
+    "id": "stream_bamgrid",
+    "category": "海外流媒体",
+    "domain": "bamgrid.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🎥 流媒体",
+      "full": "🎥 流媒体"
+    }
+  },
+  {
+    "id": "stream_max",
+    "category": "海外流媒体",
+    "domain": "max.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🎥 流媒体",
+      "full": "🎥 流媒体"
+    }
+  },
+  {
+    "id": "stream_hulu",
+    "category": "海外流媒体",
+    "domain": "hulu.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🎥 流媒体",
+      "full": "🎥 流媒体"
+    }
+  },
+  {
+    "id": "stream_prime",
+    "category": "海外流媒体",
+    "domain": "primevideo.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🎥 流媒体",
+      "full": "🎥 流媒体"
+    }
+  },
+  {
+    "id": "stream_spotify",
+    "category": "海外流媒体",
+    "domain": "spotify.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🎥 流媒体",
+      "full": "🎥 流媒体"
+    }
+  },
+  {
+    "id": "stream_spotify_cdn",
+    "category": "海外流媒体",
+    "domain": "spotifycdn.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🎥 流媒体",
+      "full": "🎥 流媒体"
+    }
+  },
+  {
+    "id": "stream_bamtech",
+    "category": "海外流媒体",
+    "domain": "bamtech.net",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🎥 流媒体",
+      "full": "🎥 流媒体"
+    }
+  },
+  {
+    "id": "stream_prime_cdn",
+    "category": "海外流媒体",
+    "domain": "aiv-cdn.net",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🎥 流媒体",
+      "full": "🎥 流媒体"
+    }
+  },
+  {
+    "id": "stream_twitch",
+    "category": "海外流媒体",
+    "domain": "twitch.tv",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🎥 流媒体",
+      "full": "🎥 流媒体"
+    }
+  },
+  {
+    "id": "adult_nhentai",
+    "category": "成人内容",
+    "domain": "nhentai.net",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_exhentai",
+    "category": "成人内容",
+    "domain": "exhentai.org",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_pornhub",
+    "category": "成人内容",
+    "domain": "pornhub.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_stripchat",
+    "category": "成人内容",
+    "domain": "stripchat.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_xhamster",
+    "category": "成人内容",
+    "domain": "xhamster.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_xvideos",
+    "category": "成人内容",
+    "domain": "xvideos.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_pornhub_cdn",
+    "category": "成人内容",
+    "domain": "phncdn.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_xhamster_cdn",
+    "category": "成人内容",
+    "domain": "xhcdn.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_xvideos_cdn",
+    "category": "成人内容",
+    "domain": "xvideos-cdn.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_pornhub_premium",
+    "category": "成人内容",
+    "domain": "pornhubpremium.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_redtube",
+    "category": "成人内容",
+    "domain": "redtube.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_youporn",
+    "category": "成人内容",
+    "domain": "youporn.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_spankbang",
+    "category": "成人内容",
+    "domain": "spankbang.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_xnxx",
+    "category": "成人内容",
+    "domain": "xnxx.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_hanime",
+    "category": "成人内容",
+    "domain": "hanime.tv",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_ehentai",
+    "category": "成人内容",
+    "domain": "e-hentai.org",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "adult_chaturbate",
+    "category": "成人内容",
+    "domain": "chaturbate.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "🔞 成人内容"
+    }
+  },
+  {
+    "id": "wechat_web",
+    "category": "微信生态",
+    "domain": "weixin.qq.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "wechat_security",
+    "category": "微信生态",
+    "domain": "weixin110.qq.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "wechat_bridge",
+    "category": "微信生态",
+    "domain": "weixinbridge.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "wechat_web_assets",
+    "category": "微信生态",
+    "domain": "res.wx.qq.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "wechat_images",
+    "category": "微信生态",
+    "domain": "qpic.cn",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "wechat_avatar",
+    "category": "微信生态",
+    "domain": "qlogo.cn",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "wechat_pay",
+    "category": "微信生态",
+    "domain": "tenpay.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "wechat_miniprogram",
+    "category": "微信生态",
+    "domain": "servicewechat.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "social_douyin",
+    "category": "国产社交",
+    "domain": "douyin.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "social_douyin_video",
+    "category": "国产社交",
+    "domain": "douyinvod.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "social_xhs",
+    "category": "国产社交",
+    "domain": "xiaohongshu.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "social_xhs_cdn",
+    "category": "国产社交",
+    "domain": "xhscdn.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "social_weibo",
+    "category": "国产社交",
+    "domain": "weibo.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "social_weibo_images",
+    "category": "国产社交",
+    "domain": "sinaimg.cn",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "social_douyin_app",
+    "category": "国产社交",
+    "domain": "amemv.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "social_xhs_altcdn",
+    "category": "国产社交",
+    "domain": "xhsrcdn.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "social_weibo_cdn",
+    "category": "国产社交",
+    "domain": "wbimg.cn",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "video_iqiyi",
+    "category": "国产视频",
+    "domain": "iqiyi.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "video_qiyi",
+    "category": "国产视频",
+    "domain": "qiyi.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "video_youku",
+    "category": "国产视频",
+    "domain": "youku.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "video_youku_cdn",
+    "category": "国产视频",
+    "domain": "ykimg.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "video_tencent",
+    "category": "国产视频",
+    "domain": "v.qq.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "video_tencent_cdn",
+    "category": "国产视频",
+    "domain": "qqvideo.tc.qq.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "video_iqiyi_pps",
+    "category": "国产视频",
+    "domain": "pps.tv",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "video_youku_alicdn",
+    "category": "国产视频",
+    "domain": "ykimg.alicdn.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "ai_deepseek",
+    "category": "国产AI",
+    "domain": "chat.deepseek.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "ai_kimi",
+    "category": "国产AI",
+    "domain": "kimi.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "ai_moonshot",
+    "category": "国产AI",
+    "domain": "moonshot.cn",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "ai_qwen",
+    "category": "国产AI",
+    "domain": "tongyi.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "ai_qwen_aliyun",
+    "category": "国产AI",
+    "domain": "tongyi.aliyun.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "ai_doubao",
+    "category": "国产AI",
+    "domain": "doubao.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "ai_volcengine",
+    "category": "国产AI",
+    "domain": "volcengine.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "ai_qwen_api",
+    "category": "国产AI",
+    "domain": "dashscope.aliyuncs.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "ai_doubao_cdn",
+    "category": "国产AI",
+    "domain": "doubaocdn.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "ad_doubleclick",
+    "category": "通用广告",
+    "domain": "doubleclick.net",
+    "ad": true
+  },
+  {
+    "id": "ad_google",
+    "category": "通用广告",
+    "domain": "googlesyndication.com",
+    "ad": true
+  },
+  {
+    "id": "ad_google_service",
+    "category": "通用广告",
+    "domain": "adservice.google.com",
+    "ad": true,
+    "non_adblock_expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📢 谷歌服务",
+      "full": "📢 谷歌服务"
+    }
+  },
+  {
+    "id": "ad_adsrvr",
+    "category": "通用广告",
+    "domain": "adsrvr.org",
+    "ad": true
+  },
+  {
+    "id": "ad_pubmatic",
+    "category": "通用广告",
+    "domain": "pubmatic.com",
+    "ad": true
+  },
+  {
+    "id": "ad_rubicon",
+    "category": "通用广告",
+    "domain": "rubiconproject.com",
+    "ad": true
+  },
+  {
+    "id": "ad_openx",
+    "category": "通用广告",
+    "domain": "openx.net",
+    "ad": true
+  },
+  {
+    "id": "ad_criteo",
+    "category": "通用广告",
+    "domain": "criteo.com",
+    "ad": true
+  },
+  {
+    "id": "ad_amazon",
+    "category": "通用广告",
+    "domain": "amazon-adsystem.com",
+    "ad": true
+  },
+  {
+    "id": "tracker_hotjar",
+    "category": "弱跟踪器",
+    "domain": "hotjar.com",
+    "ad": true
+  },
+  {
+    "id": "tracker_mouseflow",
+    "category": "弱跟踪器",
+    "domain": "mouseflow.com",
+    "ad": true
+  },
+  {
+    "id": "tracker_fullstory",
+    "category": "弱跟踪器",
+    "domain": "fullstory.com",
+    "ad": true
+  },
+  {
+    "id": "tracker_clarity",
+    "category": "弱跟踪器",
+    "domain": "clarity.ms",
+    "ad": true
+  },
+  {
+    "id": "tracker_quantserve",
+    "category": "弱跟踪器",
+    "domain": "quantserve.com",
+    "ad": true
+  },
+  {
+    "id": "tracker_google_analytics",
+    "category": "弱跟踪器",
+    "domain": "google-analytics.com",
+    "ad": true
+  },
+  {
+    "id": "adultad_exoclick",
+    "category": "成人广告",
+    "domain": "exoclick.com",
+    "ad": true
+  },
+  {
+    "id": "adultad_trafficjunky",
+    "category": "成人广告",
+    "domain": "trafficjunky.com",
+    "ad": true
+  },
+  {
+    "id": "adultad_juicyads",
+    "category": "成人广告",
+    "domain": "juicyads.com",
+    "ad": true
+  },
+  {
+    "id": "adultad_popads",
+    "category": "成人广告",
+    "domain": "popads.net",
+    "ad": true
+  },
+  {
+    "id": "adultad_adsterra",
+    "category": "成人广告",
+    "domain": "adsterra.com",
+    "ad": true
+  },
+  {
+    "id": "adultad_trafficstars",
+    "category": "成人广告",
+    "domain": "trafficstars.com",
+    "ad": true
+  },
+  {
+    "id": "unknown_mainland_ip",
+    "category": "兜底行为",
+    "domain": "unknown-cn-service.example",
+    "cn_ip": true,
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "🎯 中国直连"
+    }
+  },
+  {
+    "id": "unknown_overseas",
+    "category": "兜底行为",
+    "domain": "unknown-overseas.example",
+    "expected": {
+      "mini": "🐟 漏网之鱼",
+      "standard": "🐟 漏网之鱼",
+      "full": "🐟 漏网之鱼"
+    }
+  },
+  {
+    "id": "msg_signal",
+    "category": "Meta家族",
+    "domain": "signal.org",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📲 通讯社交",
+      "full": "📲 通讯社交"
+    }
+  },
+  {
+    "id": "msg_line",
+    "category": "Meta家族",
+    "domain": "line.me",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📲 通讯社交",
+      "full": "📲 通讯社交"
+    }
+  },
+  {
+    "id": "msg_discord",
+    "category": "Meta家族",
+    "domain": "discord.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📲 通讯社交",
+      "full": "📲 通讯社交"
+    }
+  },
+  {
+    "id": "msg_telegram",
+    "category": "Meta家族",
+    "domain": "t.me",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "📲 通讯社交",
+      "full": "📲 通讯社交"
+    }
+  },
+  {
+    "id": "crypto_binance",
+    "category": "Google家族",
+    "domain": "binance.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "💹 加密货币"
+    }
+  },
+  {
+    "id": "crypto_coinbase",
+    "category": "Google家族",
+    "domain": "coinbase.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "💹 加密货币"
+    }
+  },
+  {
+    "id": "crypto_okx",
+    "category": "Google家族",
+    "domain": "okx.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "💹 加密货币"
+    }
+  },
+  {
+    "id": "crypto_cmc",
+    "category": "Google家族",
+    "domain": "coinmarketcap.com",
+    "expected": {
+      "mini": "🚀 节点选择",
+      "standard": "🚀 节点选择",
+      "full": "💹 加密货币"
+    }
+  },
+  {
+    "id": "bilibili_main",
+    "category": "哔哩哔哩",
+    "domain": "bilibili.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "📺 哔哩哔哩"
+    }
+  },
+  {
+    "id": "bilibili_cdn",
+    "category": "哔哩哔哩",
+    "domain": "hdslb.com",
+    "expected": {
+      "mini": "🎯 中国直连",
+      "standard": "🎯 中国直连",
+      "full": "📺 哔哩哔哩"
+    }
+  }
+]

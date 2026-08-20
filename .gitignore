@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.secrets/
+private/
+dist/
+build/
+.DS_Store
+*.log
+*.tmp

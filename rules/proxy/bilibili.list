@@ -1,0 +1,11 @@
+# 哔哩哔哩：大陆内容默认直连，港澳台/海外番剧可切代理。
+# Full 档暴露独立分组，Standard/Mini 档直接并入中国直连。
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,b23.tv
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,bilivideo.com
+DOMAIN-SUFFIX,bilivideo.cn
+DOMAIN-SUFFIX,biliimg.com
+DOMAIN-SUFFIX,acgvideo.com
+DOMAIN-SUFFIX,biliintl.com
+DOMAIN-SUFFIX,bilibili.tv

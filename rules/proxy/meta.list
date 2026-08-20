@@ -1,0 +1,14 @@
+# Meta 内容平台（社交 feed，非通讯优先）：Facebook、Threads。
+# 通讯优先的 WhatsApp / Instagram / Messenger 已移至 messaging.list。
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fbcdn.com
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,fbsbx.net
+DOMAIN-SUFFIX,threads.net
+DOMAIN-SUFFIX,threads.com
+DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,oculus.com

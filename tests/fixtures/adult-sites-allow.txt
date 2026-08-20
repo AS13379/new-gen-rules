@@ -1,0 +1,20 @@
+# These content domains must never appear in REJECT lists.
+# Derived from rules/proxy/adult-content.list; validate_repository.py enforces
+# that this file and that rule list stay in exact sync.
+pornhub.com
+pornhubpremium.com
+phncdn.com
+xvideos.com
+xvideos-cdn.com
+xnxx.com
+redtube.com
+youporn.com
+spankbang.com
+hanime.tv
+nhentai.net
+e-hentai.org
+exhentai.org
+chaturbate.com
+stripchat.com
+xhamster.com
+xhcdn.com

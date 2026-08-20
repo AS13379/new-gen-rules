@@ -1,0 +1,65 @@
+# 加密货币交易所与行情。中心化交易所 + 头部去中心化交易所 + 行情数据站。
+# OKX
+DOMAIN-SUFFIX,okx.com
+DOMAIN-SUFFIX,okx-dns1.com
+DOMAIN-SUFFIX,okx-dns2.com
+DOMAIN-SUFFIX,oklink.com
+# Binance
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.vision
+DOMAIN-SUFFIX,binance.charity
+DOMAIN-SUFFIX,binance.cloud
+DOMAIN-SUFFIX,bnbstatic.com
+# Coinbase
+DOMAIN-SUFFIX,coinbase.com
+DOMAIN-SUFFIX,coinbase.exchange
+DOMAIN-SUFFIX,gdax.com
+# Kraken
+DOMAIN-SUFFIX,kraken.com
+# KuCoin
+DOMAIN-SUFFIX,kucoin.com
+DOMAIN-SUFFIX,kucoin.cc
+# Gate.io
+DOMAIN-SUFFIX,gate.io
+DOMAIN-SUFFIX,gateio.live
+DOMAIN-SUFFIX,gateio.cc
+# Bybit
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bybit.global
+DOMAIN-SUFFIX,bybitfund.com
+# Bitget
+DOMAIN-SUFFIX,bitget.com
+DOMAIN-SUFFIX,bitget.fit
+DOMAIN-SUFFIX,bitget.cc
+# MEXC
+DOMAIN-SUFFIX,mexc.com
+# HTX（原火币）
+DOMAIN-SUFFIX,htx.com
+DOMAIN-SUFFIX,huobi.com
+DOMAIN-SUFFIX,huobi.pro
+# Bitfinex
+DOMAIN-SUFFIX,bitfinex.com
+# Gemini
+DOMAIN-SUFFIX,gemini.com
+# Crypto.com
+DOMAIN-SUFFIX,crypto.com
+DOMAIN-SUFFIX,cryptoexchange.com
+# Bitstamp
+DOMAIN-SUFFIX,bitstamp.net
+# Deribit
+DOMAIN-SUFFIX,deribit.com
+# Upbit
+DOMAIN-SUFFIX,upbit.com
+# BitMart
+DOMAIN-SUFFIX,bitmart.com
+# LBank
+DOMAIN-SUFFIX,lbank.com
+DOMAIN-SUFFIX,lbank.info
+# 行情与数据
+DOMAIN-SUFFIX,coinmarketcap.com
+DOMAIN-SUFFIX,coingecko.com
+# 去中心化交易所
+DOMAIN-SUFFIX,uniswap.org
+DOMAIN-SUFFIX,pancakeswap.finance
+DOMAIN-SUFFIX,dydx.exchange
+DOMAIN-SUFFIX,1inch.io
