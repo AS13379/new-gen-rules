@@ -10,7 +10,7 @@
 - 中国大陆公网 IP 兜底直连；
 - 明确的境外服务优先进入对应代理组；
 - 未分类流量默认代理，不冒险直连；
-- Apple 默认跟随“节点选择”，而不是独立自动测速；
+- 所有代理业务默认跟随“节点选择”，自动测速仅作为手动备选；
 - 不创建香港、新加坡等地区节点组；
 - 所有广告（包括成人网站广告）只进入一个广告拦截组；
 - 成人内容网站归独立分组，是否代理/拒绝由用户选择，绝不混入广告规则。
@@ -54,7 +54,7 @@ Full 提供：
 
 ### Apple
 
-`🍎 Apple服务`的第一候选是 `🚀 节点选择`，之后才提供 `♻️ 自动选择`、手动选节点和 DIRECT。这样 Apple 默认继承用户选择的稳定出口，避免每次测速导致地区变化。
+所有代理业务组的第一候选都是 `🚀 节点选择`，之后才提供 `♻️ 自动选择`、手动选节点和 DIRECT。`🚀 节点选择` 本身也先列真实节点，再提供自动选择。这样默认始终继承用户手动选择的稳定出口，避免测速结果改变线路。
 
 规则初步覆盖 Apple Account、iCloud、App Store、APNs、Apple Intelligence、Siri 和 Private Cloud Compute 相关域名。网络分流无法绕过设备销售地区、Apple Account 地区或 Apple 服务端资格限制。
 
@@ -82,7 +82,7 @@ Google Translate、Google APIs 和 Firebase Cloud Messaging 统一归入 `📢 �
 6. 通讯社交和加密货币；
 7. AI、通讯、视频、游戏、开发者和成人内容；
 8. `GEOIP,CN` 中国大陆公网 IP；
-9. `FINAL` 到漏网之鱼，默认自动选择代理。
+9. `FINAL` 到漏网之鱼，默认跟随节点选择。
 
 明确业务规则位于 `GEOIP,CN` 之前，因此谷歌、Apple、交易所等不会因为历史直连列表而误判。
 
@@ -165,7 +165,7 @@ python3 scripts/publish.py --ref <commit-sha 或 tag>
 - 六份配置生成；
 - Mini / Standard / Full 分档；
 - 单一广告拦截组；
-- Apple 默认节点选择；
+- 所有代理业务组默认节点选择，真实节点排在自动选择之前；
 - Full 专属哔哩哔哩、加密货币、游戏、开发者和成人内容组；
 - 通讯社交统一覆盖 Telegram、WhatsApp、Instagram、Messenger、Signal、LINE、Discord 等；
 - 流媒体统一覆盖 YouTube、Netflix、Disney+、Spotify、Twitch 等；
@@ -177,7 +177,7 @@ python3 scripts/publish.py --ref <commit-sha 或 tag>
 - 使用 Subconverter v0.9.0 将六份 INI 转换为真实 Clash YAML；
 - 六份转换结果均通过 Mihomo v1.19.30 `-t` 配置校验。
 - 122 个代表场景 × 6 种配置，共 732 个确定性路由检查全部通过；
-- 分组即选择权：`🔞 成人内容` 可选 `自动选择 / 节点选择 / 手动选节点 / DIRECT / REJECT`
+- 分组即选择权：`🔞 成人内容` 可选 `节点选择 / 自动选择 / 手动选节点 / DIRECT / REJECT`
   （默认代理），`🛑 广告拦截` 可选 `REJECT / DIRECT`（默认拦截），
   是否拦截由用户在 Clash 客户端自行决定，规则仓库不代替用户做这个决定；
 - 校验只保证**分类归属**：成人站点归 `adult-content.list`（用户可控组），

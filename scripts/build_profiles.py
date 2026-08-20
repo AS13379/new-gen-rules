@@ -38,10 +38,17 @@ def ruleset(target: str, source: str) -> str:
     return f"ruleset={target},{source}"
 
 
-def select_group(name: str, *members: str, include_all: bool = False) -> str:
-    suffix = "`.*" if include_all else ""
+def select_group(
+    name: str,
+    *members: str,
+    include_all: bool = False,
+    nodes_first: bool = False,
+) -> str:
+    node_match = "`.*" if include_all else ""
     entries = "".join(f"`[]{member}" for member in members)
-    return f"custom_proxy_group={name}`select{entries}{suffix}"
+    if nodes_first:
+        return f"custom_proxy_group={name}`select{node_match}{entries}"
+    return f"custom_proxy_group={name}`select{entries}{node_match}"
 
 
 def auto_group() -> str:
@@ -101,16 +108,14 @@ def render_rules(spec: ProfileSpec) -> list[str]:
     return lines
 
 
-def service_group(name: str, *, apple: bool = False, allow_reject: bool = False) -> str:
+def service_group(name: str, *, allow_reject: bool = False) -> str:
     """Build a selectable policy group.
 
     `allow_reject` appends REJECT as a selectable option so the user can decide
     in the client whether the category is proxied or blocked. The default stays
     proxied; the choice is exposed, never made here.
     """
-    if apple:
-        return select_group(name, "🚀 节点选择", "♻️ 自动选择", "DIRECT", include_all=True)
-    members = ["♻️ 自动选择", "🚀 节点选择", "DIRECT"]
+    members = ["🚀 节点选择", "♻️ 自动选择", "DIRECT"]
     if allow_reject:
         members.append("REJECT")
     return select_group(name, *members, include_all=True)
@@ -120,17 +125,17 @@ def render_groups(spec: ProfileSpec) -> list[str]:
     tier = spec.tier
     if tier == "mini":
         groups = [
-            select_group("🚀 节点选择", "♻️ 自动选择", "DIRECT", include_all=True),
+            select_group("🚀 节点选择", "♻️ 自动选择", "DIRECT", include_all=True, nodes_first=True),
             auto_group(),
             select_group("🎯 中国直连", "DIRECT", "♻️ 自动选择", "🚀 节点选择"),
-            select_group("🐟 漏网之鱼", "♻️ 自动选择", "🚀 节点选择", "DIRECT", "REJECT", include_all=True),
+            select_group("🐟 漏网之鱼", "🚀 节点选择", "♻️ 自动选择", "DIRECT", "REJECT", include_all=True),
         ]
     else:
         groups = [
-            select_group("🚀 节点选择", "♻️ 自动选择", "DIRECT", include_all=True),
+            select_group("🚀 节点选择", "♻️ 自动选择", "DIRECT", include_all=True, nodes_first=True),
             auto_group(),
             service_group("📢 谷歌服务"),
-            service_group("🍎 Apple服务", apple=True),
+            service_group("🍎 Apple服务"),
             service_group("💬 AI平台"),
             service_group("📲 通讯社交"),
             service_group("🎥 流媒体"),
@@ -149,7 +154,7 @@ def render_groups(spec: ProfileSpec) -> list[str]:
         groups.extend(
             [
                 select_group("🎯 中国直连", "DIRECT", "♻️ 自动选择", "🚀 节点选择"),
-                select_group("🐟 漏网之鱼", "♻️ 自动选择", "🚀 节点选择", "DIRECT", "REJECT", include_all=True),
+                select_group("🐟 漏网之鱼", "🚀 节点选择", "♻️ 自动选择", "DIRECT", "REJECT", include_all=True),
             ]
         )
     if spec.adblock:
