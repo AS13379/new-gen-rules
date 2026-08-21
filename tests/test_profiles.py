@@ -65,7 +65,7 @@ class ProfileGenerationTests(unittest.TestCase):
             text = self.profiles[name]
             for group in ["📢 谷歌服务", "🍎 Apple服务", "💬 AI平台", "📲 通讯社交", "🎥 流媒体", "Ⓜ️ Microsoft服务", "🐟 漏网之鱼"]:
                 line = next(line for line in text.splitlines() if line.startswith(f"custom_proxy_group={group}`"))
-                self.assertIn("`select`[]🚀 节点选择`[]♻️ 自动选择", line, f"{name}: {group}")
+                self.assertIn("`select`[]🚀 节点选择`[]♻️ 自动选择`.*`[]DIRECT", line, f"{name}: {group}")
 
     def test_node_selection_lists_real_nodes_before_auto_selection(self):
         for name, text in self.profiles.items():
@@ -92,19 +92,13 @@ class ProfileGenerationTests(unittest.TestCase):
                 group = line.split("=", 1)[1].split("`", 1)[0]
                 if group in {"🎯 中国直连", "🛑 广告拦截", "♻️ 自动选择"}:
                     continue
-                if group == "🚀 节点选择":
-                    self.assertIn("`.*", line, f"{name}: 节点选择应直接列出所有节点")
-                    continue
-                self.assertTrue(
-                    line.endswith("`.*"),
-                    f"{name}: {group} 应直接列出所有节点，实际: {line}",
-                )
+                self.assertIn("`.*", line, f"{name}: {group} 应直接列出所有节点，实际: {line}")
 
     def test_final_group_offers_reject_and_all_nodes(self):
         for name, text in self.profiles.items():
             line = next(l for l in text.splitlines() if l.startswith("custom_proxy_group=🐟 漏网之鱼`"))
             self.assertIn("[]REJECT", line, f"{name}: 漏网之鱼应提供 REJECT")
-            self.assertTrue(line.endswith("`.*"), f"{name}: 漏网之鱼应列出所有节点")
+            self.assertIn("`select`[]🚀 节点选择`[]♻️ 自动选择`.*`[]DIRECT`[]REJECT", line, name)
 
     def test_all_ads_share_one_group_only_in_adblock_profiles(self):
         for name, text in self.profiles.items():

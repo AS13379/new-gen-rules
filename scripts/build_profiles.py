@@ -42,13 +42,13 @@ def select_group(
     name: str,
     *members: str,
     include_all: bool = False,
-    nodes_first: bool = False,
+    nodes_after: int | None = None,
 ) -> str:
-    node_match = "`.*" if include_all else ""
-    entries = "".join(f"`[]{member}" for member in members)
-    if nodes_first:
-        return f"custom_proxy_group={name}`select{node_match}{entries}"
-    return f"custom_proxy_group={name}`select{entries}{node_match}"
+    entries = [f"`[]{member}" for member in members]
+    if include_all:
+        position = len(entries) if nodes_after is None else nodes_after
+        entries.insert(position, "`.*")
+    return f"custom_proxy_group={name}`select{''.join(entries)}"
 
 
 def auto_group() -> str:
@@ -118,21 +118,21 @@ def service_group(name: str, *, allow_reject: bool = False) -> str:
     members = ["🚀 节点选择", "♻️ 自动选择", "DIRECT"]
     if allow_reject:
         members.append("REJECT")
-    return select_group(name, *members, include_all=True)
+    return select_group(name, *members, include_all=True, nodes_after=2)
 
 
 def render_groups(spec: ProfileSpec) -> list[str]:
     tier = spec.tier
     if tier == "mini":
         groups = [
-            select_group("🚀 节点选择", "♻️ 自动选择", "DIRECT", include_all=True, nodes_first=True),
+            select_group("🚀 节点选择", "♻️ 自动选择", "DIRECT", include_all=True, nodes_after=0),
             auto_group(),
             select_group("🎯 中国直连", "DIRECT", "♻️ 自动选择", "🚀 节点选择"),
-            select_group("🐟 漏网之鱼", "🚀 节点选择", "♻️ 自动选择", "DIRECT", "REJECT", include_all=True),
+            select_group("🐟 漏网之鱼", "🚀 节点选择", "♻️ 自动选择", "DIRECT", "REJECT", include_all=True, nodes_after=2),
         ]
     else:
         groups = [
-            select_group("🚀 节点选择", "♻️ 自动选择", "DIRECT", include_all=True, nodes_first=True),
+            select_group("🚀 节点选择", "♻️ 自动选择", "DIRECT", include_all=True, nodes_after=0),
             auto_group(),
             service_group("📢 谷歌服务"),
             service_group("🍎 Apple服务"),
@@ -154,7 +154,7 @@ def render_groups(spec: ProfileSpec) -> list[str]:
         groups.extend(
             [
                 select_group("🎯 中国直连", "DIRECT", "♻️ 自动选择", "🚀 节点选择"),
-                select_group("🐟 漏网之鱼", "🚀 节点选择", "♻️ 自动选择", "DIRECT", "REJECT", include_all=True),
+                select_group("🐟 漏网之鱼", "🚀 节点选择", "♻️ 自动选择", "DIRECT", "REJECT", include_all=True, nodes_after=2),
             ]
         )
     if spec.adblock:
